@@ -105,16 +105,16 @@ const Login = () => {
           </Form.Item>
 
           <div className="w-full flex justify-between text-sm mt-[-8px]">
-            <a
-              href="/forgot-password"
+            <Link
+              to="/forgot-password"
               className="cursor-pointer mb-[8px] text-sm"
             >
               Forgot your password?
-            </a>
+            </Link>
 
-            <a href="/register" className="cursor-pointer mb-[8px] text-sm ">
+            <Link href="/register" className="cursor-pointer mb-[8px] text-sm ">
               Create account?
-            </a>
+            </Link>
           </div>
 
           <Form.Item>

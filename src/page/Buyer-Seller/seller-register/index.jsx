@@ -146,9 +146,9 @@ const SellerRegister = () => {
           </Form.Item>
 
           <div className="w-full flex justify-end text-sm mt-[-8px]">
-            <a href="/login" className="cursor-pointer mb-[8px] text-sm ">
+            <Link to="/login" className="cursor-pointer mb-[8px] text-sm ">
               You already have a account?
-            </a>
+            </Link>
           </div>
 
           <Form.Item>
