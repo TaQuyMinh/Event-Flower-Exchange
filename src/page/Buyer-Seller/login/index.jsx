@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Form, Input } from "antd";
 import Header from "../../../component/header";
 import api from "../../../config/axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../../component/footer";
 
 const Login = () => {
@@ -112,7 +112,7 @@ const Login = () => {
               Forgot your password?
             </Link>
 
-            <Link href="/register" className="cursor-pointer mb-[8px] text-sm ">
+            <Link to="/register" className="cursor-pointer mb-[8px] text-sm ">
               Create account?
             </Link>
           </div>

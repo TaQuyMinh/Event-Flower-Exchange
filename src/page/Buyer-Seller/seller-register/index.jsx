@@ -1,7 +1,7 @@
 import { Button, Form, Input } from "antd";
 import Header from "../../../component/header";
 import api from "../../../config/axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../../component/footer";
 
 const SellerRegister = () => {

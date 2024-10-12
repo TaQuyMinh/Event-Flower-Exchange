@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../../../component/footer";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -150,6 +151,9 @@ const Register = () => {
           </Form.Item>
 
           <div className="w-full flex justify-end text-sm mt-[-8px]">
+
+
+
             <Link to="/login" className="cursor-pointer mb-[8px] text-sm ">
               I already have a account?
             </Link>
