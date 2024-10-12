@@ -1,22 +1,23 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "././page/Buyer-Seller/home";
-import Login from "./page/Buyer-Seller/login";
+import Login from "./page/login";
 import Product from "./page/Buyer-Seller/product";
 import PrivateRoute from "./component/private-route";
 import ForgotPassword from "./page/Buyer-Seller/forgetPassword"; // Thêm import cho ForgotPassword
-import Register from "./page/Buyer-Seller/signup";
+import Register from "./page/signup";
 import ProductPage from "./page/Buyer-Seller/productpage";
-import SellerRegister from "./page/Buyer-Seller/seller-register";
+import SellerRegister from "./page/seller-register";
 import Cart from "./page/Buyer-Seller/cart-page";
 import Checkout from "./page/Buyer-Seller/checkout";
 import Order_Page from "./page/Buyer-Seller/order";
-import Page_OTP from "./page/Buyer-Seller/OTP";
+// import Page_OTP from "./page/Buyer-Seller/OTP";
 import TransactionCustomer from "./page/Buyer-Seller/transaction-customer";
 import ProfileCustomer from "./page/Buyer-Seller/profile-customer";
 import WalletCustomer from "./page/Buyer-Seller/wallet-customer";
 import ChangePasswordCustomer from "./page/Buyer-Seller/changpassword-customer";
 import ProductCustomer from "./page/Buyer-Seller/product-customer";
+import AddProduct from "./page/Buyer-Seller/addprocduct";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -60,10 +61,10 @@ const App = () => {
       path: "order",
       element: <Order_Page />,
     },
-    {
-      path: "otp",
-      element: <Page_OTP />,
-    },
+    // {
+    //   path: "otp",
+    //   element: <Page_OTP />,
+    // },
     {
       path: "transaction-customer",
       element: <TransactionCustomer />,
@@ -85,6 +86,10 @@ const App = () => {
     {
       path: "product-customer",
       element: <ProductCustomer />,
+    },
+    {
+      path: "addproduct",
+      element: <AddProduct />,
     },
 
     // {

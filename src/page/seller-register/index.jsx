@@ -1,11 +1,15 @@
 import { Button, Form, Input } from "antd";
-import Header from "../../../component/header";
-import api from "../../../config/axios";
-import { Link, useNavigate } from "react-router-dom";
-import Footer from "../../../component/footer";
+import Header from "../../component/header";
+import api from "../../config/axios";
+import { useNavigate } from "react-router-dom";
+import Footer from "../../component/footer";
 
 const SellerRegister = () => {
   const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/login");
+  };
 
   const handleRegister = async (values) => {
     console.log(values);
@@ -146,9 +150,12 @@ const SellerRegister = () => {
           </Form.Item>
 
           <div className="w-full flex justify-end text-sm mt-[-8px]">
-            <Link to="/login" className="cursor-pointer mb-[8px] text-sm ">
+            <div
+              className="cursor-pointer mb-[8px] text-sm "
+              onClick={handleLogin}
+            >
               You already have a account?
-            </Link>
+            </div>
           </div>
 
           <Form.Item>
